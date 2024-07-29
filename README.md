@@ -32,5 +32,8 @@ A script to test "defaults".
 
 Default settings are stored in `before.txt`, it waits for user input to continue.
 
-In that time make your change, press <return>, the new "defaults" will be stored in `after.txt`.
+Leave the terminal session and make your change.
+
+Return to the terminal session and press <return>, the new "defaults" will be stored in `after.txt`.
+
 Use a "diff" tool to view the differences.
