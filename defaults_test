@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+defaults read > before.txt
+
+echo "Change a setting and press <return> to continue..."; read
+
+defaults read > after.txt
+
+echo "Use a 'diff' tool to compare the changes from before and after."

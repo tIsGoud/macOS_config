@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Check if the command is prepended with 'sudo'.
+if [[ $EUID -ne 0 ]];
+then
+  printf "\nSetting the name requires sudo privileges.\n\nFor example $ sudo $0 \n\n"
+  exit
+fi
+
+# Set Computer-, Host-, LocalHost- and NetBiosName
+if [ -n "$1" ]; then
+  printf "\nSet Computer-, Host-, LocalHost- and NetBiosName to $1"
+  printf "Press any key to continue..."; read
+
+  sudo scutil --set ComputerName $1
+  sudo scutil --set HostName $1
+  sudo scutil --set LocalHostName $1
+  sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $1
+
+  printf "\nPlease log out and log back in to make all settings take effect.\n"
+else
+  printf "\nPlease provide the name for this computer.\n\nFor example $ sudo $0 myComputer\n\n"
+fi
