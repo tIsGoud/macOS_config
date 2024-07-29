@@ -30,10 +30,10 @@ A script to set the machine name.
 
 A script to test "defaults".
 
-Default settings are stored in `before.txt`, it waits for user input to continue.
+Run the script and the default settings are saved in `before.txt`, it waits for user input to continue.
 
 Leave the terminal session and make your change.
 
-Return to the terminal session and press <return>, the new "defaults" will be stored in `after.txt`.
+Return to the terminal session and press the return-key to save the changed "defaults" in `after.txt`.
 
 Use a "diff" tool to view the differences.
