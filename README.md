@@ -2,11 +2,9 @@
 
 My default settings for macOS.
 
-Based on the 'dotFiles' from Jeff Geerling.
-
 ## macos_config
 
-My personal settings based on the Jeff Geerling's file.
+My personal settings based on the [Jeff Geerling's dotfiles](https://github.com/geerlingguy/dotfiles).
 
 Differences:
 - Some personal preferences.
