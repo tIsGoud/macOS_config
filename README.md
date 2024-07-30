@@ -4,7 +4,7 @@ My default settings for macOS.
 
 ## macos_config
 
-My personal settings based on the [Jeff Geerling's dotfiles](https://github.com/geerlingguy/dotfiles).
+My personal settings based on [Jeff Geerling's dotfiles](https://github.com/geerlingguy/dotfiles).
 
 Differences:
 - Some personal preferences.
