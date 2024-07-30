@@ -247,8 +247,8 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
-# Use Backspace/Delete to go back a page
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
+# Use Backspace/Delete to go back a page => not working in Sonoma
+#defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
 
 ###############################################################################
 # Mail                                                                        #
